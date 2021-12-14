@@ -9,6 +9,8 @@ public class playermovement : MonoBehaviour
     public float speed = 12f;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
+    public float sprinting = 50f;
+    public float normal = 0f;
 
     public Transform groundCheck;
     public float groundDistance = 0.1f;
@@ -16,6 +18,12 @@ public class playermovement : MonoBehaviour
 
     Vector3 velocity;
     bool isGrounded;
+
+    public void Start()
+    {
+        normal = speed;
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -26,6 +34,16 @@ public class playermovement : MonoBehaviour
         {
             velocity.y = -2f;
         }
+
+        if (Input.GetButton("Sprint") && isGrounded)
+        {
+            speed = sprinting;
+        }
+        else
+        {
+            speed = normal;
+        }
+
 
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
