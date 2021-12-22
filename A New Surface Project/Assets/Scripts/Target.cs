@@ -15,6 +15,14 @@ public class Target : MonoBehaviour
 
     void Die()
     {
+        ScoreKill scoreKillScript = gameObject.GetComponent<ScoreKill>();
+        if (scoreKillScript != null)
+        {
+            Score playerScore = FindObjectOfType<Score>();
+
+            playerScore.AddScore(scoreKillScript.killValue);
+        }
+        
         Destroy(gameObject);
     }
 }
