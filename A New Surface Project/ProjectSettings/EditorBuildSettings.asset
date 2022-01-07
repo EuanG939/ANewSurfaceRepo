@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level2Placeholder.unity
     guid: 5d4546f0d72af7e4a83c453d3dce03e1
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: d555419b43fe67b49acb61d88168cc57
+  - enabled: 1
+    path: Assets/Scenes/OutOfTime.unity
+    guid: e2d5d051516a6ea42808048bbd569dcc
+  - enabled: 1
+    path: Assets/Scenes/WinningScene.unity
+    guid: 250bdaf3e6ebe4041895c369c714ac2e
   m_configObjects: {}

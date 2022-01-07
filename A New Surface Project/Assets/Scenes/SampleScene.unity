@@ -402,6 +402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeValue: 90
   timeText: {fileID: 38658515}
+  gameOverScene: OutOfTime
 --- !u!114 &38658515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1017,7 +1018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 3
-  gameOverScene: 
+  gameOverScene: GameOver
 --- !u!65 &140501573
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14195,7 +14196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75557f8af8eaf0b41a8986fd7feb8664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Level2Placeholder
+  levelToLoad: WinningScene
 --- !u!65 &1820008813
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -2,27 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
 
+    
     public float timeValue = 90;
     public Text timeText;
-    public static Timer instance;
+    public string gameOverScene;
 
-    void Awake ()
-    {
-        if (instance == null)
-            instance = this;
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-        DontDestroyOnLoad(gameObject);
-    }
-    
     
     // Update is called once per frame
     void Update()
@@ -37,6 +26,12 @@ public class Timer : MonoBehaviour
         }
 
         DisplayTime(timeValue);
+
+
+        if (timeValue <= 0)
+        {
+            SceneManager.LoadScene(gameOverScene);
+        }
     }
 
 
