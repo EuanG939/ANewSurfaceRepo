@@ -40,7 +40,7 @@ public class PlayerHealth : MonoBehaviour
         //if health drops to 0, means the player should die
         if (currentHealth <= 0)
         {
-            //call kill fucntion to kill player
+            //call kill function to kill player
             Kill();
         }
     }

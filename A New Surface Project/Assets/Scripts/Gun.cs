@@ -19,6 +19,8 @@ public class Gun : MonoBehaviour
         {
             nextTimeToFire = Time.time + 1f / fireRate;
             Shoot();
+
+            FindObjectOfType<AudioManager>().Play("Scanner");
         }
     }
 
@@ -28,7 +30,7 @@ public class Gun : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
-            Debug.Log(hit.transform.name);
+            
 
             Target target = hit.transform.GetComponent<Target>();
             if (target != null)
