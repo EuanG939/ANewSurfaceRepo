@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9134728540643730948}
   - component: {fileID: 3312848733527005949}
   - component: {fileID: 8525003370197803433}
+  - component: {fileID: 299677458322824224}
   m_Layer: 0
   m_Name: StoneFence_Post_LOD0
   m_TagString: Untagged
@@ -99,3 +100,16 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!65 &299677458322824224
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3874586970598993441}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.75259066, y: 2.3642044, z: 0.8096838}
+  m_Center: {x: 0.09928721, y: 1.1821022, z: 0.000000025180615}

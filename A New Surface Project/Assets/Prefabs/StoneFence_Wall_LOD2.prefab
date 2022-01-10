@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6818283517074331268}
   - component: {fileID: 982877430015732349}
   - component: {fileID: 6202757321232814377}
+  - component: {fileID: -4302305979486539943}
   m_Layer: 0
   m_Name: StoneFence_Wall_LOD2
   m_TagString: Untagged
@@ -99,3 +100,16 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!65 &-4302305979486539943
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558025414600040097}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.48451224, y: 2.3631134, z: 3}
+  m_Center: {x: 0, y: 1.1815567, z: 0}
