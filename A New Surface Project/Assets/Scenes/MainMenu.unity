@@ -494,7 +494,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12.802429, y: -128}
+  m_AnchoredPosition: {x: -1, y: -160}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &598201242
@@ -750,6 +750,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6823037205640178987, guid: 33d7cfbc420c5334d857e87947475191, type: 3}
+      propertyPath: sounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6823037205640178987, guid: 33d7cfbc420c5334d857e87947475191, type: 3}
+      propertyPath: sounds.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5d10619eaaebc3a449f0bbf22b06ef60, type: 3}
+    - target: {fileID: 6823037205640178987, guid: 33d7cfbc420c5334d857e87947475191, type: 3}
+      propertyPath: sounds.Array.data[2].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6823037205640178987, guid: 33d7cfbc420c5334d857e87947475191, type: 3}
+      propertyPath: sounds.Array.data[2].name
+      value: Background Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 6823037205640178987, guid: 33d7cfbc420c5334d857e87947475191, type: 3}
+      propertyPath: sounds.Array.data[2].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6823037205640178987, guid: 33d7cfbc420c5334d857e87947475191, type: 3}
+      propertyPath: sounds.Array.data[2].volume
+      value: 0.306
+      objectReference: {fileID: 0}
     - target: {fileID: 6823037205640178988, guid: 33d7cfbc420c5334d857e87947475191, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -872,7 +896,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12.802429, y: -36}
+  m_AnchoredPosition: {x: -1, y: -64}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &681956982
@@ -1018,7 +1042,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12.802429, y: 55}
+  m_AnchoredPosition: {x: -2, y: 35}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &971830180
@@ -1240,7 +1264,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: 171}
+  m_AnchoredPosition: {x: -1, y: 156}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1863820091
