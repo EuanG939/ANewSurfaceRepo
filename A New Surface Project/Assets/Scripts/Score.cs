@@ -8,6 +8,7 @@ public class Score : MonoBehaviour
     //public variable
     public Text scoreDisplay;
     public bool shouldReset = false;
+    public Text highscore;
     
     //private variables
     private static int scoreValue = 0;
@@ -15,7 +16,8 @@ public class Score : MonoBehaviour
 
     void Start()
     {
-       if (shouldReset == true)
+        highscore.text = PlayerPrefs.GetInt("highscore", 0).ToString();
+        if (shouldReset == true)
         {
             //reset score back to 0
             scoreValue = 0;
@@ -36,5 +38,12 @@ public class Score : MonoBehaviour
 
         //update display of score based on numerical value
         scoreDisplay.text = scoreValue.ToString();
+
+        if (scoreValue > PlayerPrefs.GetInt("highscore"))
+        {
+            PlayerPrefs.SetInt("highscore", scoreValue);
+            highscore.text = scoreValue.ToString();
+        }
+            
     }
 }
